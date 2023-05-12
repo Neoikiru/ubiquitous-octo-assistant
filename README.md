@@ -15,9 +15,9 @@
     <a href="https://github.com/Neoikiru/ubiquitous-octo-assistant"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/Neoikiru/ubiquitous-octo-assistant/main/README.md">English</a>
+    <a href="https://github.com/Neoikiru/ubiquitous-octo-assistant/blob/main/README.md">English</a>
     ·
-    <a href="https://github.com/Neoikiru/ubiquitous-octo-assistant/main/README.ua.md">Ukrainian</a>
+    <a href="https://github.com/Neoikiru/ubiquitous-octo-assistant/blob/main/README.ua.md">Ukrainian</a>
   </p>
 </div>
 

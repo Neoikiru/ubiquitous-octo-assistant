@@ -1,0 +1,72 @@
+youtube_bat:
+  - Відкрий ютуб
+  - Відкрий YouTube
+  - Запусти ютуб
+  - Запусти YouTube
+  - Увімкни ютуб
+  - Увімкни YouTube
+  - ютуб
+  - Open youtube
+  - youtube
+  - Start youtube
+music_bat:
+  - Включи музику
+  - Хочу музики
+  - Увімкни музику
+  - Музика
+  - Відкрити музику
+  - слухати музику
+  - лофі
+  - Open music
+  - Music
+  - listen music
+  - listen to music
+  - lofi
+taskmgr_bat:
+  - диспетчер задач
+  - диспетчер
+  - подивитись задачі
+  - відкрити диспетчер
+  - вікрити диспетчер задач
+  - показати диспетчер задач
+  - диспетчер показати
+  - показати диспетчер
+  - task manageer
+  - manager
+  - show task manager
+  - open task manager
+  - display task manager
+sleep_bat:
+  - сон
+  - заблокувати
+  - заблокувати комп'ютер
+  - режим сну
+  - sleep mode
+  - lock pc
+  - lock the pc
+  - pc lock
+  - sleep pc
+schoolSchedule_EduModule:
+  - розклад на завтра
+  - покажи розклад
+  - розклад
+  - скажи розклад на завтра
+  - які завтра уроки
+  - уроки на завтра
+  - schedule for tomorrow
+  - display timetable
+  - timetable for tomorrow
+  - display timetable for tomorrow
+  - lessons tomorrow
+  - lessons next day
+  - tomorrow lessons
+schoolTasks_EduModule:
+  - Що треба зробити
+  - борги по школі
+  - тести з школи
+  - творчі завдання
+  - робота у школі
+  - tasks school
+  - tasks for school
+  - uncompleted tasks
+  - tasks in school

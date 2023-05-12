@@ -36,7 +36,6 @@
       <a href="#getting-started">Початок роботи</a>
       <ul>
         <li><a href="#prerequisites">Передумови</a></li>
-        <li><a href="#requirements">Вимоги</a></li>
         <li><a href="#installation">Установка</a></li>
       </ul>
     </li>

@@ -76,9 +76,9 @@
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
-```cmd
-python >= 3.10
-```
+* ```sh
+  python >= 3.10
+  ```
 
 ### Requirements 
 

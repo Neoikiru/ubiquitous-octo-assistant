@@ -154,7 +154,7 @@ Don't forget to give the project a star! Thanks again!
 
 
 <!-- LICENSE -->
-## License
+## Ліцензія
 
 Поширюється за ліцензією MIT. Докладніше дивіться в файлі `LICENSE.txt`.
 
@@ -163,7 +163,7 @@ Don't forget to give the project a star! Thanks again!
 
 
 <!-- CONTACT -->
-## Contact
+## Контакти
 
 Автор - [@Neoikiru](https://t.me/Neoikiru) - neoikiru@gmail.com
 
@@ -174,7 +174,7 @@ Don't forget to give the project a star! Thanks again!
 
 
 <!-- ACKNOWLEDGMENTS -->
-## Вдячність
+## Подяки
 
 * []()
 * []()

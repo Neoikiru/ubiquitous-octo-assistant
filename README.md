@@ -58,10 +58,7 @@
 
 ![product-screenshot](https://github.com/Neoikiru/ubiquitous-octo-assistant/assets/101185766/bdca7e43-c628-4b3f-960b-07223b6c0dfd)
 
-# English
 The project is a virtual AI assistant that incorporates various features. It includes voice command recognition, allowing users to give instructions such as "open YouTube," "play music," "schedule for tomorrow," and other similar commands. The assistant can also answer questions using ChatGPT, a language model developed by OpenAI. Additionally, the project utilizes camera and gesture recognition technology to control the volume on a user's PC. Overall, this project aims to provide a comprehensive and interactive AI assistant experience with multiple functionalities.
-# Українська
-Проект являє собою віртуального помічника зі штучним інтелектом, який включає в себе різні функції. Він включає в себе розпізнавання голосових команд, що дозволяє користувачам давати такі інструкції, як «відкрити YouTube», «відтворити музику», «розклад на завтра» та інші подібні команди. Помічник також може відповідати на запитання за допомогою ChatGPT, мовної моделі, розробленої OpenAI. Крім того, проект використовує камеру та технологію розпізнавання жестів для керування гучністю на ПК користувача. Загалом цей проект має на меті надати комплексний та інтерактивний досвід помічника зі штучним інтелектом із кількома функціями.
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

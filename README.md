@@ -15,11 +15,9 @@
     <a href="https://github.com/Neoikiru/ubiquitous-octo-assistant"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/Neoikiru/ubiquitous-octo-assistant">View Demo</a>
+    <a href="https://github.com/Neoikiru/ubiquitous-octo-assistant/main/README.md">English</a>
     ·
-    <a href="https://github.com/Neoikiru/ubiquitous-octo-assistant/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/Neoikiru/ubiquitous-octo-assistant/issues">Request Feature</a>
+    <a href="https://github.com/Neoikiru/ubiquitous-octo-assistant/main/README.ua.md">Ukrainian</a>
   </p>
 </div>
 

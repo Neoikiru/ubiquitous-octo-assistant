@@ -165,7 +165,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@Neoikiru](https://t.me/Neoikiru) - neoikiru@gmail.com
+Creator - [@Neoikiru](https://t.me/Neoikiru) - neoikiru@gmail.com
 
 Project Link: [https://github.com/Neoikiru/ubiquitous-octo-assistant](https://github.com/Neoikiru/ubiquitous-octo-assistant)
 

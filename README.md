@@ -75,6 +75,11 @@
 
 To get a local copy up and running follow these simple example steps.
 
+### Prerequisites
+```cmd
+python >= 3.10
+```
+
 ### Requirements 
 
 Install all requirements
@@ -87,7 +92,7 @@ Install all requirements
 1. Get a free API Keys at [ChatGPT](https://platform.openai.com/account/api-keys), [ElevenLabs](https://docs.elevenlabs.io/authentication/01-xi-api-key), [PicoVoice](https://console.picovoice.ai/profile)
 2. Clone the repo
    ```cmd
-   git clone https://github.com/github_username/repo_name.git
+   git clone https://github.com/Neoikiru/ubiquitous-octo-assistant.git
    ```
 3. Install all requirements
    ```cmd
@@ -108,8 +113,8 @@ Install all requirements
 ## Usage
 
 <!-- Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources. -->
-*Run main Script
-   ```cmd
+Run main Script
+*  ```cmd
    python main.py
    ```
 <!-- _For more examples, please refer to the [Documentation](https://example.com)_ -->

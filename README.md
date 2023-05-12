@@ -70,7 +70,7 @@
 * [![Laravel][Laravel.com]][Laravel-url]
 * [![Bootstrap][Bootstrap.com]][Bootstrap-url]
 * [![JQuery][JQuery.com]][JQuery-url]
-* [![Mediapipe][https://mediapipe.dev/assets/img/brand.svg]][https://developers.google.com/mediapipe]
+* [![Mediapipe](https://mediapipe.dev/assets/img/brand.svg)](https://developers.google.com/mediapipe)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

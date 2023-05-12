@@ -7,119 +7,110 @@
     <img src="GUI/Icons/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-<h3 align="center">Virtual Assistant</h3>
+<h3 align="center">Віртуальний асистент</h3>
 
   <p align="center">
-    Fancy virtual assistant with cool features
+    Віртуальний асистент з багатьма можливостями
     <br />
-    <a href="https://github.com/Neoikiru/ubiquitous-octo-assistant"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/Neoikiru/ubiquitous-octo-assistant"><strong>Документація »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/Neoikiru/ubiquitous-octo-assistant">View Demo</a>
+    <a href="https://github.com/Neoikiru/ubiquitous-octo-assistant/blob/main/README.md">Англійська</a>
     ·
-    <a href="https://github.com/Neoikiru/ubiquitous-octo-assistant/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/Neoikiru/ubiquitous-octo-assistant/issues">Request Feature</a>
+    <a href="https://github.com/Neoikiru/ubiquitous-octo-assistant/blob/main/README.ua.md">Українська</a>
   </p>
 </div>
 
 
-
 <!-- TABLE OF CONTENTS -->
 <details>
-  <summary>Table of Contents</summary>
+  <summary>Зміст</summary>
   <ol>
     <li>
-      <a href="#about-the-project">About The Project</a>
+      <a href="#about-the-project">Про проєкт</a>
       <ul>
-        <li><a href="#built-with">Built With</a></li>
+        <li><a href="#built-with">Побудовано з використанням</a></li>
       </ul>
     </li>
     <li>
-      <a href="#getting-started">Getting Started</a>
+      <a href="#getting-started">Початок роботи</a>
       <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
+        <li><a href="#prerequisites">Передумови</a></li>
+        <li><a href="#requirements">Вимоги</a></li>
+        <li><a href="#installation">Установка</a></li>
       </ul>
     </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
+    <li><a href="#usage">Використання</a></li>
+    <li><a href="#roadmap">План розвитку</a></li>
+    <li><a href="#license">Ліцензія</a></li>
+    <li><a href="#contact">Контакти</a></li>
+    <li><a href="#acknowledgments">Подяки</a></li>
   </ol>
 </details>
 
 
-
 <!-- ABOUT THE PROJECT -->
-## About The Project
+## Про проєкт
 
 ![product-screenshot](https://github.com/Neoikiru/ubiquitous-octo-assistant/assets/101185766/bdca7e43-c628-4b3f-960b-07223b6c0dfd)
 
-Проект являє собою віртуального помічника зі штучним інтелектом, який включає в себе різні функції. Він включає в себе розпізнавання голосових команд, що дозволяє користувачам давати такі інструкції, як «відкрити YouTube», «відтворити музику», «розклад на завтра» та інші подібні команди. Помічник також може відповідати на запитання за допомогою ChatGPT, мовної моделі, розробленої OpenAI. Крім того, проект використовує камеру та технологію розпізнавання жестів для керування гучністю на ПК користувача. Загалом цей проект має на меті надати комплексний та інтерактивний досвід помічника зі штучним інтелектом із кількома функціями.
+ Проектом є віртуальний AI-помічник, що має ряд функціональних можливостей. Він вміє розпізнавати голосові команди, такі як "відкрий YouTube", "програй музику", "розклад на завтра", "завдання в школі" та інші. Помічник також вміє відповідати на питання, використовуючи модель ChatGPT, розроблену OpenAI. Крім того, проект використовує камеру та технологію розпізнавання жестів для керування гучністю на комп'ютері користувача. Загалом, цей проект має на меті забезпечити комплексний та інтерактивний досвід з використанням AI-помічника з багатьма функціями.
 
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">повернутися нагору</a>)</p>
 
 
+### Побудовано з використанням
+* [![Python][Python.com]][Python-url]
+* [![MediaPipe][Mediapipe.com]][Mediapipe-url]
+* [![OpenAI][OpenAI.com]][OpenAI-url]
+* [![PyQt][PyQt.com]][PyQt-url]
 
-### Built With
-
-* [![Next][Next.js]][Next-url]
-* [![React][React.js]][React-url]
-* [![Vue][Vue.js]][Vue-url]
-* [![Angular][Angular.io]][Angular-url]
-* [![Svelte][Svelte.dev]][Svelte-url]
-* [![Laravel][Laravel.com]][Laravel-url]
-* [![Bootstrap][Bootstrap.com]][Bootstrap-url]
-* [![JQuery][JQuery.com]][JQuery-url]
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">повернутися нагору</a>)</p>
 
 
 
 <!-- GETTING STARTED -->
-## Getting Started
+## Початок роботи
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+Щоб отримати локальну копію та розпочати роботу, слідувати цим простим інструкціям.
 
-### Prerequisites
-
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
+### Передумови
+* ```sh
+  python >= 3.10
   ```
 
 ### Installation
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
-   ```sh
-   git clone https://github.com/github_username/repo_name.git
+1. Отримайте безкоштовні API-ключі на [ChatGPT](https://platform.openai.com/account/api-keys), [ElevenLabs](https://docs.elevenlabs.io/authentication/01-xi-api-key), [PicoVoice](https://console.picovoice.ai/profile)
+2. Клонуйте репозиторій
+   ```cmd
+   git clone https://github.com/Neoikiru/ubiquitous-octo-assistant.git
    ```
-3. Install NPM packages
-   ```sh
-   npm install
-   ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
+3. Встановіть всі необхідні компоненти
+   ```cmd
+    pip install -r requirements.txt
+    ```
+4. Введіть свої API-ключі в файлі `config.py`
+   ```python
+   GPT_TOKEN = 'ENTER YOUR API';
+   PICOVOICE_ACCESS_KEY  = 'ENTER YOUR API';
+   ELEVENLABS_API_KEY  = 'ENTER YOUR API';
    ```
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">повернутися нагору</a>)</p>
 
 
 
 <!-- USAGE EXAMPLES -->
-## Usage
+## Використання
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
+<!-- Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources. -->
+Запустіть головний скрипт
+*  ```cmd
+   python main.py
+   ```
+<!-- _For more examples, please refer to the [Documentation](https://example.com)_ -->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -128,19 +119,25 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 <!-- ROADMAP -->
 ## Roadmap
 
-- [ ] Feature 1
-- [ ] Feature 2
-- [ ] Feature 3
-    - [ ] Nested Feature
+- [x] Add multilangual support
+- [x] Add edu.edu integration
+- [ ] Reorganize repo structure
+- [ ] Add multilangual README support
+    - [ ]  Ukrainian
+    - [x]  English
+- [ ] Rename constant variables
+- [ ] Add requirements.txt file (URGENT)
+- [ ] Add block about commands and genral usage instuctions (URGENT)
+ 
 
-See the [open issues](https://github.com/github_username/repo_name/issues) for a full list of proposed features (and known issues).
+See the [open issues](https://github.com/Neoikiru/ubiquitous-octo-assistant/issues) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
 <!-- CONTRIBUTING -->
-## Contributing
+<!-- ## Contributing
 
 Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
@@ -153,7 +150,7 @@ Don't forget to give the project a star! Thanks again!
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">back to top</a>)</p> -->
 
 
 
@@ -169,9 +166,9 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - email@email_client.com
+Your Name - [@Neoikiru](https://t.me/Neoikiru) - neoikiru@gmail.com
 
-Project Link: [https://github.com/github_username/repo_name](https://github.com/github_username/repo_name)
+Project Link: [https://github.com/Neoikiru/ubiquitous-octo-assistant](https://github.com/Neoikiru/ubiquitous-octo-assistant)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -189,33 +186,11 @@ Project Link: [https://github.com/github_username/repo_name](https://github.com/
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/github_username/repo_name.svg?style=for-the-badge
-[contributors-url]: https://github.com/github_username/repo_name/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/github_username/repo_name.svg?style=for-the-badge
-[forks-url]: https://github.com/github_username/repo_name/network/members
-[stars-shield]: https://img.shields.io/github/stars/github_username/repo_name.svg?style=for-the-badge
-[stars-url]: https://github.com/github_username/repo_name/stargazers
-[issues-shield]: https://img.shields.io/github/issues/github_username/repo_name.svg?style=for-the-badge
-[issues-url]: https://github.com/github_username/repo_name/issues
-[license-shield]: https://img.shields.io/github/license/github_username/repo_name.svg?style=for-the-badge
-[license-url]: https://github.com/github_username/repo_name/blob/master/LICENSE.txt
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/linkedin_username
-[product-screenshot]: images/screenshot.png
-[Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
-[Next-url]: https://nextjs.org/
-[React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
-[React-url]: https://reactjs.org/
-[Vue.js]: https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vuedotjs&logoColor=4FC08D
-[Vue-url]: https://vuejs.org/
-[Angular.io]: https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white
-[Angular-url]: https://angular.io/
-[Svelte.dev]: https://img.shields.io/badge/Svelte-4A4A55?style=for-the-badge&logo=svelte&logoColor=FF3E00
-[Svelte-url]: https://svelte.dev/
-[Laravel.com]: https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white
-[Laravel-url]: https://laravel.com
-[Bootstrap.com]: https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white
-[Bootstrap-url]: https://getbootstrap.com
-[JQuery.com]: https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white
-[JQuery-url]: https://jquery.com 
+[Mediapipe.com]: https://img.shields.io/badge/Mediapipe-20232A?style=for-the-badge&logo=devdotto&logoColor=#003E54
+[Mediapipe-url]: https://developers.google.com/mediapipe
+[PyQt.com]: https://img.shields.io/badge/PyQT-20232A?style=for-the-badge&logo=qt&logoColor=#41CD52
+[PyQt-url]: https://www.qt.io/product/ui-design-tools
+[OpenAI.com]: https://img.shields.io/badge/OpenAI-20232A?style=for-the-badge&logo=openai&logoColor=#412991
+[OpenAI-url]: https://openai.com/
+[Python.com]: https://img.shields.io/badge/Python-20232A?style=for-the-badge&logo=python&logoColor=#3776AB
+[Python-url]: https://www.python.org/

@@ -27,23 +27,23 @@
   <summary>Зміст</summary>
   <ol>
     <li>
-      <a href="#about-the-project">Про проєкт</a>
+      <a href="#Про-проєкт">Про проєкт</a>
       <ul>
-        <li><a href="#built-with">Побудовано з використанням</a></li>
+        <li><a href="#Побудовано-з-використанням">Побудовано з використанням</a></li>
       </ul>
     </li>
     <li>
-      <a href="#getting-started">Початок роботи</a>
+      <a href="#Початок-роботи">Початок роботи</a>
       <ul>
-        <li><a href="#prerequisites">Передумови</a></li>
-        <li><a href="#installation">Установка</a></li>
+        <li><a href="#Передумови">Передумови</a></li>
+        <li><a href="#Установка">Установка</a></li>
       </ul>
     </li>
-    <li><a href="#usage">Використання</a></li>
-    <li><a href="#roadmap">План розвитку</a></li>
-    <li><a href="#license">Ліцензія</a></li>
-    <li><a href="#contact">Контакти</a></li>
-    <li><a href="#acknowledgments">Подяки</a></li>
+    <li><a href="#Використання">Використання</a></li>
+    <li><a href="#План-розвитку">План розвитку</a></li>
+    <li><a href="#Ліцензія">Ліцензія</a></li>
+    <li><a href="#Контакти">Контакти</a></li>
+    <li><a href="#Подяки">Подяки</a></li>
   </ol>
 </details>
 

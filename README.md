@@ -75,28 +75,29 @@
 
 To get a local copy up and running follow these simple example steps.
 
-### Prerequisites
+### Requirements 
 
-This is an example of how to list things you need to use the software and how to install them.
-* Cmd
-  ```cmd
+Install all requirements
+* ```cmd
   pip install -r requirements.txt
   ```
 
 ### Installation
 
-1. Get a free API Key at [https://example.com](https://example.com)
+1. Get a free API Keys at [ChatGPT](https://platform.openai.com/account/api-keys), [ElevenLabs](https://docs.elevenlabs.io/authentication/01-xi-api-key), [PicoVoice](https://console.picovoice.ai/profile)
 2. Clone the repo
-   ```sh
+   ```cmd
    git clone https://github.com/github_username/repo_name.git
    ```
-3. Install NPM packages
-   ```sh
-   npm install
-   ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
+3. Install all requirements
+   ```cmd
+    pip install -r requirements.txt
+    ```
+4. Enter your API in `config.py`
+   ```python
+   GPT_TOKEN = 'ENTER YOUR API';
+   PICOVOICE_ACCESS_KEY  = 'ENTER YOUR API';
+   ELEVENLABS_API_KEY  = 'ENTER YOUR API';
    ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -106,9 +107,12 @@ This is an example of how to list things you need to use the software and how to
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
+<!-- Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources. -->
+*Run main Script
+   ```cmd
+   python main.py
+   ```
+<!-- _For more examples, please refer to the [Documentation](https://example.com)_ -->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

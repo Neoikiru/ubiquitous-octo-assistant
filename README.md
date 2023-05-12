@@ -36,7 +36,6 @@
       <a href="#getting-started">Getting Started</a>
       <ul>
         <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#requirements">Requirements</a></li>
         <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
@@ -78,13 +77,6 @@ To get a local copy up and running follow these simple example steps.
 ### Prerequisites
 * ```sh
   python >= 3.10
-  ```
-
-### Requirements 
-
-Install all requirements
-* ```cmd
-  pip install -r requirements.txt
   ```
 
 ### Installation

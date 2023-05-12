@@ -111,27 +111,27 @@
    ```
 <!-- _For more examples, please refer to the [Documentation](https://example.com)_ -->
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">повернутися нагору</a>)</p>
 
 
 
 <!-- ROADMAP -->
-## Roadmap
+## План розвитку
 
-- [x] Add multilangual support
-- [x] Add edu.edu integration
-- [ ] Reorganize repo structure
-- [ ] Add multilangual README support
-    - [ ]  Ukrainian
-    - [x]  English
-- [ ] Rename constant variables
-- [ ] Add requirements.txt file (URGENT)
-- [ ] Add block about commands and genral usage instuctions (URGENT)
+- [x] Додати підтримку мультиязиковості
+- [x] Додати інтеграцію з edu.edu
+- [ ] Переробити структуру репозиторію
+- [ ] Додати підтримку мультиязикового README
+    - [ ]  Українська
+    - [x]  Англійська
+- [ ] Перейменувати постійні змінні
+- [ ] Додати файл requirements.txt (НЕОБХІДНО)
+- [ ] Додати блок з командами та загальними інструкціями по використанню (НЕОБХІДНО)
  
 
-See the [open issues](https://github.com/Neoikiru/ubiquitous-octo-assistant/issues) for a full list of proposed features (and known issues).
+Перегляньте [open issues](https://github.com/Neoikiru/ubiquitous-octo-assistant/issues) для повного списку запропонованих функцій (та відомих проблем).
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">повернутися нагору</a>)</p>
 
 
 
@@ -156,31 +156,31 @@ Don't forget to give the project a star! Thanks again!
 <!-- LICENSE -->
 ## License
 
-Distributed under the MIT License. See `LICENSE.txt` for more information.
+Поширюється за ліцензією MIT. Докладніше дивіться в файлі `LICENSE.txt`.
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">повернутися нагору</a>)</p>
 
 
 
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@Neoikiru](https://t.me/Neoikiru) - neoikiru@gmail.com
+Автор - [@Neoikiru](https://t.me/Neoikiru) - neoikiru@gmail.com
 
-Project Link: [https://github.com/Neoikiru/ubiquitous-octo-assistant](https://github.com/Neoikiru/ubiquitous-octo-assistant)
+Посилання на проект: [https://github.com/Neoikiru/ubiquitous-octo-assistant](https://github.com/Neoikiru/ubiquitous-octo-assistant)
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">повернутися нагору</a>)</p>
 
 
 
 <!-- ACKNOWLEDGMENTS -->
-## Acknowledgments
+## Вдячність
 
 * []()
 * []()
 * []()
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">повернутися нагору</a>)</p>
 
 
 

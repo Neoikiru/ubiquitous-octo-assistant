@@ -23,6 +23,7 @@
   </p>
 </div>
 
+*Read this in other languages: [English](README.md), [Ukrainian](README.ua.md).*
 
 
 <!-- TABLE OF CONTENTS -->
@@ -51,7 +52,6 @@
   </ol>
 </details>
 
-*Read this in other languages: [English](README.md), [Ukrainian](README.ua.md).*
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project

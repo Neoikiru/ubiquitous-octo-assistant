@@ -8,10 +8,9 @@ from PyQt6.QtWidgets import QApplication, QMainWindow, QLabel, QLineEdit
 from PyQt6 import uic, QtGui
 from PyQt6.QtGui import QPixmap
 from voiceModule import VoiceModule
-from app import HandGestureDetector
+from CameraModule import HandGestureDetector
 from audioControllerFull import AudioHandler
 import SchoolModule
-# from cameraModule import CameraModule
 import config
 
 
@@ -19,13 +18,14 @@ class UI(QMainWindow):
     def __init__(self):
         super().__init__()
         # loading the ui file with uic module
-        uic.loadUi("./UI/layout.ui", self)
+        uic.loadUi("./GUI/layout.ui", self)
 
         self.disply_width = 279
         self.display_height = 158
 
         self.WaitTimeSpinBox.setValue(7)
         self.LanguageComboBox.setCurrentText('English')
+        self.setWindowIcon(QtGui.QIcon('./GUI/Icons/logo.png'))
 
         for word in config.STOP_WORDS:
             self.StopWordsText.appendPlainText(word)
@@ -37,12 +37,12 @@ class UI(QMainWindow):
         self.isPassVisible = False
         self.EduPasswordLineEdit.textEdited.connect(self.change_edu_password)
         self.ShowPassButton.clicked.connect(self.change_pass_button_icon)
-        self.ShowPassButton.setIcon(QtGui.QIcon("./UI/Icons/hide.png"))
+        self.ShowPassButton.setIcon(QtGui.QIcon("./GUI/Icons/hide.png"))
 
         self.isLoginVisible = False
         self.EduLoginLineEdit.textEdited.connect(self.change_edu_login)
         self.ShowLoginButton.clicked.connect(self.change_login_button_icon)
-        self.ShowLoginButton.setIcon(QtGui.QIcon("./UI/Icons/hide.png"))
+        self.ShowLoginButton.setIcon(QtGui.QIcon("./GUI/Icons/hide.png"))
 
 
         self.StopWordsText.textChanged.connect(self.change_stop_word)
@@ -80,19 +80,19 @@ class UI(QMainWindow):
         self.isLoginVisible = not self.isLoginVisible
         if self.isLoginVisible:
             self.EduLoginLineEdit.setEchoMode(QLineEdit.EchoMode.Normal)
-            self.ShowLoginButton.setIcon(QtGui.QIcon("./UI/Icons/view.png"))
+            self.ShowLoginButton.setIcon(QtGui.QIcon("./GUI/Icons/view.png"))
         else:
             self.EduLoginLineEdit.setEchoMode(QLineEdit.EchoMode.Password)
-            self.ShowLoginButton.setIcon(QtGui.QIcon("./UI/Icons/hide.png"))
+            self.ShowLoginButton.setIcon(QtGui.QIcon("./GUI/Icons/hide.png"))
 
     def change_pass_button_icon(self):
         self.isPassVisible = not self.isPassVisible
         if self.isPassVisible:
             self.EduPasswordLineEdit.setEchoMode(QLineEdit.EchoMode.Normal)
-            self.ShowPassButton.setIcon(QtGui.QIcon("./UI/Icons/view.png"))
+            self.ShowPassButton.setIcon(QtGui.QIcon("./GUI/Icons/view.png"))
         else:
             self.EduPasswordLineEdit.setEchoMode(QLineEdit.EchoMode.Password)
-            self.ShowPassButton.setIcon(QtGui.QIcon("./UI/Icons/hide.png"))
+            self.ShowPassButton.setIcon(QtGui.QIcon("./GUI/Icons/hide.png"))
 
     def display_edu_data(self, command, data):
         if command == 'tasks':

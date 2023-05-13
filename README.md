@@ -110,11 +110,11 @@ Run main Script
    py main.py
    ```
 Enter your edu.edu login and password
-*  (```
+*  ```
    Edu.edu login <---
    Edu.edu password <---
    ```
-  It will be saved in `config.py`)
+>  It will be saved in `config.py`
 You can set activation word in `config.py`, 
    'Hey, Elli!' - default,
    'Start' - other option

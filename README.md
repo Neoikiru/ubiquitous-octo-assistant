@@ -121,11 +121,11 @@ Run main Script
 - [x] Add multilangual support
 - [x] Add edu.edu integration
 - [ ] Reorganize repo structure
-- [ ] Add multilangual README support
-    - [ ]  Ukrainian
+- [x] Add multilangual README support
+    - [x]  Ukrainian
     - [x]  English
-- [ ] Rename constant variables
-- [ ] Add requirements.txt file (URGENT)
+- [x] Rename constant variables
+- [x] Add requirements.txt file (URGENT)
 - [ ] Add block about commands and genral usage instuctions (URGENT)
  
 

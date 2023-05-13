@@ -27,7 +27,7 @@ def settings_handler():
     if len(config.PICOVOICE_ACCESS_KEY) <= 5:
         print('Error! Picovoice api key is invalid!')
         return 1
-    if len(config.ElevenLabsUserApiKey) <= 5:
+    if len(config.ELEVENLABS_API_KEY) <= 5:
         print('Error! Elevenlabs api key is invalid!')
         return 1
     return 0

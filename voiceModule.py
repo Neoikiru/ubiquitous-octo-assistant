@@ -7,16 +7,16 @@ from PyQt6.QtCore import QCoreApplication, QThread, pyqtSignal
 import openai
 from fuzzywuzzy import fuzz
 from pvrecorder import PvRecorder
-from ukrainian_tts.tts import TTS, Voices, Stress
-import simpleaudio as sa
+# from ukrainian_tts.tts import TTS, Voices, Stress
+# import simpleaudio as sa
 import speech_recognition as sr
 from elevenlabslib import *
 import pvporcupine
 import os
 import yaml
 # test
-# import torch
-# import sounddevice as sd
+import torch
+import sounddevice as sd
 # test
 import config
 
@@ -29,7 +29,7 @@ class VoiceModule(QThread):
 
     openai.api_key = config.GPT_TOKEN
 
-    user = ElevenLabsUser(config.ElevenLabsUserApiKey)
+    user = ElevenLabsUser(config.ELEVENLABS_API_KEY)
     voice = user.get_voices_by_name('Elli')[0]
 
     data = yaml.safe_load(open('customCommands.yaml', 'rt', encoding='utf8'))
@@ -41,19 +41,19 @@ class VoiceModule(QThread):
         sensitivities=[1] * 2
     )
 
-    tts = TTS(device='cpu')
+    # tts = TTS(device='cpu')
 
-    # language = 'ua'
-    # model_id = 'v3_ua'
-    # sample_rate = 48000
-    # speaker = 'mykyta'
-    # device = torch.device('cpu')
-    #
-    # model, example_text = torch.hub.load(repo_or_dir='snakers4/silero-models',
-    #                                      model='silero_tts',
-    #                                      language=language,
-    #                                      speaker=model_id)
-    # model.to(device)
+    language = 'ua'
+    model_id = 'v3_ua'
+    sample_rate = 48000
+    speaker = 'mykyta'
+    device = torch.device('cpu')
+    
+    model, example_text = torch.hub.load(repo_or_dir='snakers4/silero-models',
+                                         model='silero_tts',
+                                         language=language,
+                                         speaker=model_id)
+    model.to(device)
 
     recorder = PvRecorder(device_index=-1, frame_length=porcupine.frame_length)
     print('Using device: %s' % recorder.selected_device)
@@ -81,20 +81,20 @@ class VoiceModule(QThread):
             self.currentStatus.emit('Could not request results!')
             print('Could not request results')
 
-    def play_audio(self, file):
-        wave_obj = sa.WaveObject.from_wave_file(file)
-        play_obj = wave_obj.play()
-        play_obj.wait_done()
+    # def play_audio(self, file):
+        # wave_obj = sa.WaveObject.from_wave_file(file)
+        # play_obj = wave_obj.play()
+        # play_obj.wait_done()
 
     def text_to_speech_ukrainian(self, text):
-        # audio = self.model.apply_tts(text=text,
-        #                              speaker=self.speaker,
-        #                              sample_rate=self.sample_rate)
-        # sd.play(audio, self.sample_rate)
-        with open('audio.wav', mode='wb') as file:
-            _, output_text = self.tts.tts(text, Voices.Tetiana.value, Stress.Dictionary.value, file)
-        # print('Accented text:', output_text)
-        self.play_audio('audio.wav')
+        audio = self.model.apply_tts(text=text,
+                                     speaker=self.speaker,
+                                     sample_rate=self.sample_rate)
+        sd.play(audio, self.sample_rate)
+        # with open('audio.wav', mode='wb') as file:
+        #     _, output_text = self.tts.tts(text, Voices.Tetiana.value, Stress.Dictionary.value, file)
+        # # print('Accented text:', output_text)
+        # self.play_audio('audio.wav')
 
     def text_to_speech_english(self, text):
         self.voice.generate_and_play_audio(text, playInBackground=False)

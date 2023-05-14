@@ -50,8 +50,7 @@
 
 <!-- ABOUT THE PROJECT -->
 ## Про проєкт
-
-![product-screenshot](https://github.com/Neoikiru/ubiquitous-octo-assistant/assets/101185766/bdca7e43-c628-4b3f-960b-07223b6c0dfd)
+![product-screenshot](https://github.com/Neoikiru/ubiquitous-octo-assistant/assets/101185766/3b733a69-14e1-4cee-b584-fc419ded7b2d)
 
  Проектом є віртуальний AI-помічник, що має ряд функціональних можливостей. Він вміє розпізнавати голосові команди, такі як "відкрий YouTube", "програй музику", "розклад на завтра", "завдання в школі" та інші. Помічник також вміє відповідати на питання, використовуючи модель ChatGPT, розроблену OpenAI. Крім того, проект використовує камеру та технологію розпізнавання жестів для керування гучністю на комп'ютері користувача. Загалом, цей проект має на меті забезпечити комплексний та інтерактивний досвід з використанням AI-помічника з багатьма функціями.
 
@@ -79,7 +78,7 @@
   python >= 3.10
   ```
 
-### Installation
+### Установка
 
 1. Отримайте безкоштовні API-ключі на [ChatGPT](https://platform.openai.com/account/api-keys), [ElevenLabs](https://docs.elevenlabs.io/authentication/01-xi-api-key), [PicoVoice](https://console.picovoice.ai/profile)
 2. Клонуйте репозиторій
@@ -99,18 +98,34 @@
 
 <p align="right">(<a href="#readme-top">повернутися нагору</a>)</p>
 
-
-
 <!-- USAGE EXAMPLES -->
 ## Використання
 
 <!-- Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources. -->
 Запустіть головний скрипт
 *  ```cmd
-   python main.py
+   py main.py
    ```
-<!-- _For more examples, please refer to the [Documentation](https://example.com)_ -->
-
+ 
+Введіть ваш логін і пароль від edu.edu
+*  ```
+   Edu.edu login <---
+   Edu.edu password <---
+   ```
+   + Вони будуть збережені у `config.py`
+ 
+Ви можете встановити ключове слово у `config.py`, 
+   'Хей, Еллі!' - за замовчуванням,
+   'Старт' - інший варіант
+*  ```python
+   ACTIVATION_WORD = 'Hey, Elli'  # [Start; Hey, Elli]
+   ```
+   
+Повертайте вказівний палець за або проти годинникової стрілки, щоб відповідно збільшити або зменшити гучність
+  Тримайте руку закритою на кілька секунд, щоб вимкнути основну гучність
+*  ```
+   Як це виглядає можна побачити у вікні камера
+   ```
 <p align="right">(<a href="#readme-top">повернутися нагору</a>)</p>
 
 
@@ -121,15 +136,15 @@
 - [x] Додати підтримку мультиязиковості
 - [x] Додати інтеграцію з edu.edu
 - [ ] Переробити структуру репозиторію
-- [ ] Додати підтримку мультиязикового README
-    - [ ]  Українська
+- [x] Додати підтримку мультиязикового README
+    - [x]  Українська
     - [x]  Англійська
-- [ ] Перейменувати постійні змінні
-- [ ] Додати файл requirements.txt (НЕОБХІДНО)
-- [ ] Додати блок з командами та загальними інструкціями по використанню (НЕОБХІДНО)
+- [x] Перейменувати постійні змінні
+- [x] Додати файл requirements.txt (НЕОБХІДНО)
+- [x] Додати блок з командами та загальними інструкціями по використанню (НЕОБХІДНО)
  
 
-Перегляньте [open issues](https://github.com/Neoikiru/ubiquitous-octo-assistant/issues) для повного списку запропонованих функцій (та відомих проблем).
+Перегляньте [Відкриті проблеми](https://github.com/Neoikiru/ubiquitous-octo-assistant/issues) для повного списку запропонованих функцій (та відомих проблем).
 
 <p align="right">(<a href="#readme-top">повернутися нагору</a>)</p>
 

@@ -60,6 +60,7 @@ class SchoolAutomationSystem(QObject):
             response = s.post("https://edu.edu.vn.ua/user/login", login_data, verify=False)
             if str(response.url) == 'https://edu.edu.vn.ua/?error=true':
                 self.StatusUI.emit('Wrong login or pass!')
+                print('Worng pass or login!!')
                 return
             home_page = s.get('https://edu.edu.vn.ua/course/userlist')
             home_soup = bs(home_page.content, "html.parser")
@@ -179,6 +180,7 @@ class SchoolAutomationSystem(QObject):
             response = s.post("https://edu.edu.vn.ua/user/login", login_data, verify=False)
             if str(response.url) == 'https://edu.edu.vn.ua/?error=true':
                 self.StatusUI.emit('Wrong login or pass!')
+                print('Worng pass or login!!')
                 return
             home_page = s.get(f"https://edu.edu.vn.ua/calendar/view/2023/{month}/all")
             soup = bs(home_page.content, "html.parser")

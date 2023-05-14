@@ -1,72 +1,161 @@
-youtube_bat:
-  - Відкрий ютуб
-  - Відкрий YouTube
-  - Запусти ютуб
-  - Запусти YouTube
-  - Увімкни ютуб
-  - Увімкни YouTube
-  - ютуб
-  - Open youtube
-  - youtube
-  - Start youtube
-music_bat:
-  - Включи музику
-  - Хочу музики
-  - Увімкни музику
-  - Музика
-  - Відкрити музику
-  - слухати музику
-  - лофі
-  - Open music
-  - Music
-  - listen music
-  - listen to music
-  - lofi
-taskmgr_bat:
-  - диспетчер задач
-  - диспетчер
-  - подивитись задачі
-  - відкрити диспетчер
-  - вікрити диспетчер задач
-  - показати диспетчер задач
-  - диспетчер показати
-  - показати диспетчер
-  - task manageer
-  - manager
-  - show task manager
-  - open task manager
-  - display task manager
-sleep_bat:
-  - сон
-  - заблокувати
-  - заблокувати комп'ютер
-  - режим сну
-  - sleep mode
-  - lock pc
-  - lock the pc
-  - pc lock
-  - sleep pc
-schoolSchedule_EduModule:
-  - розклад на завтра
-  - покажи розклад
-  - розклад
-  - скажи розклад на завтра
-  - які завтра уроки
-  - уроки на завтра
-  - schedule for tomorrow
-  - display timetable
-  - timetable for tomorrow
-  - display timetable for tomorrow
-  - lessons tomorrow
-  - lessons next day
-  - tomorrow lessons
-schoolTasks_EduModule:
-  - Що треба зробити
-  - борги по школі
-  - тести з школи
-  - творчі завдання
-  - робота у школі
-  - tasks school
-  - tasks for school
-  - uncompleted tasks
-  - tasks in school
+allCommands:
+  - command:
+      action: ahk
+      exe: web.exe
+      args: 
+        - http://youtube.com
+      phrases:
+        - Відкрий ютуб
+        - Відкрий YouTube
+        - Запусти ютуб
+        - Запусти YouTube
+        - Увімкни ютуб
+        - Увімкни YouTube
+        - ютуб
+        - Open youtube
+        - youtube
+        - Start youtube
+
+  - command:
+      action: ahk
+      exe: web.exe
+      args: 
+        - https://www.youtube.com/watch?v=jfKfPfyJRdk
+      phrases:
+        - Включи музику
+        - Хочу музики
+        - Увімкни музику
+        - Музика
+        - Відкрити музику
+        - слухати музику
+        - лофі
+        - Open music
+        - Music
+        - listen music
+        - listen to music
+        - lofi
+
+  - command:
+      action: ahk
+      exe: web.exe
+      args:
+      phrases:
+        - Відкрий браузер
+        - Відкрий хром
+        - Запусти гугл
+        - Запусти гугл
+        - Увімкни браузер
+        - Увімкни хром
+        - браузер
+        - Open browser
+        - browser
+        - Start chrome
+        - Open chrome
+
+  - command:
+      action: ahk
+      exe: lock.exe
+      args:
+      phrases:
+        - заблокувати
+        - заблокувати комп'ютер
+        - lock pc
+        - lock the pc
+        - pc lock
+
+  - command:
+      action: ahk
+      exe: sleep.exe
+      args:
+      phrases:
+        - сон
+        - режим сну
+        - sleep mode
+        - sleep pc
+
+  - command:
+      action: ahk
+      exe: clipboard.exe
+      args:
+      phrases:
+        - clipboard
+        - show clipboard
+        - display clipboard
+        - буфер обміну
+        - покажи буфер обміну
+        - що у буфері обміну
+
+  - command:
+      action: ahk
+      exe: screenshot.exe
+      args:
+      phrases:
+        - screenshot
+        - make screenshot
+        - take screenshot
+        - do screenshot
+        - зроби знімок єкрану
+        - знімок єкрану
+        - скріншот
+        - зроби скріншот
+
+  - command:
+      action: ahk
+      exe: roll_up_windows.exe
+      args:
+      phrases:
+        - roll up windows
+        - hide everything
+        - hide windows
+        - roll windows
+        - скрий вікна
+        - згорни всі вікна
+        - згорни вікна
+        - згорни все
+
+  - command:
+      action: ahk
+      exe: trashcan.exe
+      args:
+      phrases:
+        - empty trashcan
+        - delete trashcan
+        - clean trashcan
+        - очисти корзину
+        - видали все з корзини
+        - спорожнити корзину
+
+  - command:
+      action: school
+      exe: tasks
+      args:
+      phrases:
+        - Що треба зробити
+        - борги по школі
+        - тести з школи
+        - творчі завдання
+        - робота у школі
+        - tasks school
+        - tasks for school
+        - uncompleted tasks
+        - tasks in school
+
+  - command:
+      action: school
+      exe: schedule
+      args:
+      phrases:
+        - розклад на завтра
+        - покажи розклад
+        - розклад
+        - скажи розклад на завтра
+        - які завтра уроки
+        - уроки на завтра
+        - schedule for tomorrow
+        - display timetable
+        - timetable for tomorrow
+        - display timetable for tomorrow
+        - lessons tomorrow
+        - lessons next day
+        - tomorrow lessons
+  

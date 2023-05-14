@@ -112,45 +112,39 @@ class VoiceModule(QThread):
         return response['choices'][0]['message']['content']
 
     def executeCustomCommands(self, text):
-        path = os.getcwd() + '\scripts'
-        method, command = self.customCommands(text)
-        match method:
-            case 'bat':
-                # f'cmd /c "{path}/{command}.bat"'
-                os.system(f'{path}/{command}.bat')
-                # os.spawnl(os.P_NOWAIT, f'{path}/{command}.bat')
-                self.currentStatus.emit(f'Successfully executed {command}')
-            case 'cmd':
-                # executeCommand = f'{command}'
-                os.system(command)
-                # os.spawnl(os.P_NOWAIT, command)
-                self.currentStatus.emit(f'Successfully executed {command}')
-            case 'EduModule':
-                self.currentStatus.emit(f'Fetching data about: {command}')
-                self.logicSignal.emit(command)
-            case _:
-                return None
+        bestMatch = self.customCommands(text)
+
+        if bestMatch is None:
+            return None
+
+        executor = os.getcwd() + '\scripts'
+        if bestMatch['command']['args']:
+            args = bestMatch['command']['args']
+        else:
+            args = []
+        
+        match bestMatch['command']['action']:
+            case 'ahk':
+                os.system(executor + f'\{bestMatch["command"]["exe"]} {" ".join(args)}')
+                self.currentStatus.emit('Successfully executed command')
+            case 'school':
+                self.currentStatus.emit(f"Fetching data about: {bestMatch['command']['exe']}")
+                self.logicSignal.emit(bestMatch['command']['exe'])
+
         if config.LANGUAGE == 'Ukrainian':
             return ['Виконано', 'Добре', 'Один момент', 'Секунду'][random.randint(0, 3)]
         else:
             return ['Yes, sir!', 'Done', 'Success', 'Easy peasy'][random.randint(0, 3)]
 
-    def customCommands(self, text):
-        executeMethod = None
-        executeCommand = None
-        maxConfidence = 0
-        for command, phrases in self.data.items():
-            for phrase in phrases:
-                if fuzz.WRatio(text, phrase) >= maxConfidence:
-                    maxConfidence = fuzz.WRatio(text, phrase)
-                    try:
-                        executeCommand = command.split('_')[0]
-                        executeMethod = command.split('_')[1]
-                    except:
-                        print('Invalid custom command!')
-        if maxConfidence <= 87: return None, executeCommand
-        print(executeMethod, executeCommand, maxConfidence)
-        return executeMethod, executeCommand
+    def customCommands(self, input_text):
+        bestMatch = None
+        confidence = 0
+        for com in self.data['allCommands']:
+            for phrase in com['command']['phrases']:
+                if (fuzz.WRatio(phrase, input_text) > confidence):
+                    confidence = fuzz.WRatio(phrase, input_text)
+                    bestMatch = com
+        return bestMatch if confidence > 85 else None
 
     def SpeachModule(self):
         print('Successfully started Speach Module!')

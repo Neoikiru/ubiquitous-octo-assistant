@@ -128,9 +128,9 @@ class UI(QMainWindow):
             self.change_output_text(output)
 
     def start_edu_data_fetch(self, command):
-        if command == 'schoolTasks':
+        if command == 'tasks':
             Thread(target=self.edu_controller.display_tasks).start()
-        elif command == 'schoolSchedule':
+        elif command == 'schedule':
             Thread(target=self.edu_controller.display_tomorrow_schedule).start()
 
 

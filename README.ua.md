@@ -65,7 +65,7 @@
 * [![OpenAI][OpenAI.com]][OpenAI-url]
 * [![PyQt][PyQt.com]][PyQt-url]
 * [![AutoHotKey][AutoHotKey.com]][AutoHotKey-url]
-* 
+
 <p align="right">(<a href="#readme-top">повернутися нагору</a>)</p>
 
 

@@ -39,6 +39,7 @@
         <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
+    <li><a href="#adding-custom-commands">Cusom commands</a></li>
     <li><a href="#usage">Usage</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#license">License</a></li>
@@ -51,7 +52,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-![product-screenshot](https://github.com/Neoikiru/ubiquitous-octo-assistant/assets/101185766/bdca7e43-c628-4b3f-960b-07223b6c0dfd)
+![product-screenshot](https://raw.githubusercontent.com/Neoikiru/ubiquitous-octo-assistant/main/GUI/Icons/preview.png)
 
   The project is a virtual AI assistant that incorporates various features. It includes voice command recognition, allowing users to give instructions such as "open YouTube," "play music," "schedule for tomorrow," and other similar commands. The assistant can also answer questions using ChatGPT, a language model developed by OpenAI. Additionally, the project utilizes camera and gesture recognition technology to control the volume on a user's PC. Overall, this project aims to provide a comprehensive and interactive AI assistant experience with multiple functionalities.
 
@@ -64,6 +65,7 @@
 * [![MediaPipe][Mediapipe.com]][Mediapipe-url]
 * [![OpenAI][OpenAI.com]][OpenAI-url]
 * [![PyQt][PyQt.com]][PyQt-url]
+* [![AutoHotKey][AutoHotKey.com]][AutoHotKey-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -130,17 +132,55 @@ Rotate your index finger clockwise or counterclockwise to increase or decrease v
    Camera feed preview to test
    ```
 Say anything, and if it's not a built-in command, then the assistant will answer you using the GPT-3.5 model
-  Otherwise, one of the following commands will be executed (Full list can be found in ---)
+  Otherwise, one of the following commands will be executed (Full list can be found in `customCommands.yaml`)
 *  ```
    Open YouTube
    Listen to music
-   Open task manager
-   
+   ...
    ```
 <!-- _For more examples, please refer to the [Documentation](https://example.com)_ -->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+
+## Adding custom commands
+
+First of all, all custom commands are `.exe` files that were compiled by `AutoHotKey`.
+
+Create `ahk` script, compile it to `.exe` and place in folder `scripts`.
+*  ```cmd
+   scripts/your_script.exe
+   ```
+
+Open `customCommands.yaml`, add your command using the structure below:
+*  ```yaml
+     - command:
+      action: ahk
+      exe: your_script.exe
+      args: # Any arguments you need to run your .exe (see below)
+      phrases:
+        - your_phrase1
+        - your_phrase2
+        - your_phrase3
+        - your_phrase4
+   ```
+   
+
+* Args example. Command that will be executed in cmd with this block:
+   ```yaml
+     - command:
+      action: ahk
+      exe: web.exe
+      args: 
+        - youtube.com
+      phrases:
+        - Open YouTube
+   ```
+   Now if we say `Open YouTube` the following command will be executed in cmd:
+   ```cmd
+     .../scripts/web.exe youtube.com
+   ```
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 <!-- ROADMAP -->
@@ -204,9 +244,8 @@ Project Link: [https://github.com/Neoikiru/ubiquitous-octo-assistant](https://gi
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
-* []()
-* []()
-* []()
+* [@Neoikiru](https://t.me/Neoikiru)
+* [@RandomPeopleFromYouTube](https://youtube.com)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -221,3 +260,5 @@ Project Link: [https://github.com/Neoikiru/ubiquitous-octo-assistant](https://gi
 [OpenAI-url]: https://openai.com/
 [Python.com]: https://img.shields.io/badge/Python-20232A?style=for-the-badge&logo=python&logoColor=#3776AB
 [Python-url]: https://www.python.org/
+[AutoHotKey.com]: https://img.shields.io/badge/AutoHotKey-20232A?style=for-the-badge&logo=autohotkey&logoColor=#334455
+[AutoHotKey-url]: https://www.autohotkey.com/

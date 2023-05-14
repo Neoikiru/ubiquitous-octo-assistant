@@ -40,6 +40,7 @@
       </ul>
     </li>
     <li><a href="#Використання">Використання</a></li>
+    <li><a href="#Додавання-користувацьких-команд">Додавання користувацьких команд</a></li>
     <li><a href="#План-розвитку">План розвитку</a></li>
     <li><a href="#Ліцензія">Ліцензія</a></li>
     <li><a href="#Контакти">Контакти</a></li>
@@ -63,7 +64,8 @@
 * [![MediaPipe][Mediapipe.com]][Mediapipe-url]
 * [![OpenAI][OpenAI.com]][OpenAI-url]
 * [![PyQt][PyQt.com]][PyQt-url]
-
+* [![AutoHotKey][AutoHotKey.com]][AutoHotKey-url]
+* 
 <p align="right">(<a href="#readme-top">повернутися нагору</a>)</p>
 
 
@@ -126,9 +128,55 @@
 *  ```
    Як це виглядає можна побачити у вікні камера
    ```
+Скажіть що-небудь, і якщо це не вбудована команда, асистент відповість вам, використовуючи модель GPT-3.5.
+В іншому випадку буде виконана одна з наступних команд (повний список можна знайти в файлі `customCommands.yaml`):
+*  ```
+   Відкрий YouTube
+   Прослухати музику
+   ...
+   ```
 <p align="right">(<a href="#readme-top">повернутися нагору</a>)</p>
 
 
+## Додавання користувацьких команд
+
+По-перше, всі користувацькі команди є виконуваними файлами .exe, які скомпільовані за допомогою `AutoHotKey`.
+
+Створіть скрипт AHK, скомпілюйте його в .exe та помістіть у папку "scripts".
+*  ```cmd
+   scripts/your_script.exe
+   ```
+
+Відкрийте файл `customCommands.yaml` і додайте свою команду, використовуючи наступну структуру:
+
+*  ```yaml
+     - command:
+      action: ahk
+      exe: ваш_файл.exe
+      args: # Будь-які аргументи, необхідні для виконання вашого .exe (див. нижче)
+      phrases:
+        - ваша_фраза1
+        - ваша_фраза2
+        - ваша_фраза3
+        - ваша_фраза4
+   ```
+   
+
+* Приклад аргументів. Команда, яка буде виконуватися в командному рядку за допомогою цього блоку:
+   ```yaml
+     - command:
+      action: ahk
+      exe: web.exe
+      args: 
+        - youtube.com
+      phrases:
+        - Відкрий YouTube
+   ```
+   Тепер, якщо ми скажемо `Відкрий YouTube`, команда, яка наведена нижче, буде виконана в командному рядку:
+   ```cmd
+     .../scripts/web.exe youtube.com
+   ```
+<p align="right">(<a href="#readme-top">повернутися нагору</a>)</p>
 
 <!-- ROADMAP -->
 ## План розвитку
@@ -208,3 +256,5 @@ Don't forget to give the project a star! Thanks again!
 [OpenAI-url]: https://openai.com/
 [Python.com]: https://img.shields.io/badge/Python-20232A?style=for-the-badge&logo=python&logoColor=#3776AB
 [Python-url]: https://www.python.org/
+[AutoHotKey.com]: https://img.shields.io/badge/AutoHotKey-20232A?style=for-the-badge&logo=autohotkey&logoColor=#334455
+[AutoHotKey-url]: https://www.autohotkey.com/

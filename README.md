@@ -145,9 +145,9 @@ Say anything, and if it's not a built-in command, then the assistant will answer
 
 ## Adding custom commands
 
-First of all, all custom commands are exe files that were compiled by `AutoHotKey`.
+First of all, all custom commands are `.exe` files that were compiled by `AutoHotKey`.
 
-Create ahk script, compile it to exe and place in folder scripts.
+Create `ahk` script, compile it to `.exe` and place in folder `scripts`.
 *  ```cmd
    scripts/your_script.exe
    ```
@@ -157,7 +157,7 @@ Open `customCommands.yaml`, add your command using the structure below:
      - command:
       action: ahk
       exe: your_script.exe
-      args: # Any arguments you need to run your exe (see below)
+      args: # Any arguments you need to run your .exe (see below)
       phrases:
         - your_phrase1
         - your_phrase2

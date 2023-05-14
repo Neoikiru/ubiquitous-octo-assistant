@@ -65,6 +65,7 @@
 * [![MediaPipe][Mediapipe.com]][Mediapipe-url]
 * [![OpenAI][OpenAI.com]][OpenAI-url]
 * [![PyQt][PyQt.com]][PyQt-url]
+* [![AutoHotKey][AutoHotKey.com]][AutoHotKey-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -261,3 +262,5 @@ Project Link: [https://github.com/Neoikiru/ubiquitous-octo-assistant](https://gi
 [OpenAI-url]: https://openai.com/
 [Python.com]: https://img.shields.io/badge/Python-20232A?style=for-the-badge&logo=python&logoColor=#3776AB
 [Python-url]: https://www.python.org/
+[AutoHotKey.com]: https://img.shields.io/badge/AutoHotKey-20232A?style=for-the-badge&logo=autohotkey&logoColor=#334455
+[AutoHotKey-url]: https://www.autohotkey.com/

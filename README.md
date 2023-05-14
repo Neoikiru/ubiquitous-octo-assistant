@@ -107,7 +107,27 @@ To get a local copy up and running follow these simple example steps.
 <!-- Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources. -->
 Run main Script
 *  ```cmd
-   python main.py
+   py main.py
+   ```
+   
+Enter your edu.edu login and password
+*  ```
+   Edu.edu login <---
+   Edu.edu password <---
+   ```
+   + It will be saved in `config.py`
+ 
+You can set activation word in `config.py`, 
+   'Hey, Elli!' - default,
+   'Start' - other option
+*  ```python
+   ACTIVATION_WORD = 'Hey, Elli'  # [Start; Hey, Elli]
+   ```
+   
+Rotate your index finger clockwise or counterclockwise to increase or decrease volume respectively
+  Hold your hand closed for a few seconds to mute master volume
+*  ```
+   Camera feed preview to test
    ```
 <!-- _For more examples, please refer to the [Documentation](https://example.com)_ -->
 
@@ -121,11 +141,11 @@ Run main Script
 - [x] Add multilangual support
 - [x] Add edu.edu integration
 - [ ] Reorganize repo structure
-- [ ] Add multilangual README support
-    - [ ]  Ukrainian
+- [x] Add multilangual README support
+    - [x]  Ukrainian
     - [x]  English
-- [ ] Rename constant variables
-- [ ] Add requirements.txt file (URGENT)
+- [x] Rename constant variables
+- [x] Add requirements.txt file (URGENT)
 - [ ] Add block about commands and genral usage instuctions (URGENT)
  
 

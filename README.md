@@ -136,7 +136,6 @@ Say anything, and if it's not a built-in command, then the assistant will answer
 *  ```
    Open YouTube
    Listen to music
-   Open task manager
    ...
    ```
 <!-- _For more examples, please refer to the [Documentation](https://example.com)_ -->

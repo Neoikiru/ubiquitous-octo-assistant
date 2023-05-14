@@ -144,7 +144,7 @@
 - [x] Додати блок з командами та загальними інструкціями по використанню (НЕОБХІДНО)
  
 
-Перегляньте [open issues](https://github.com/Neoikiru/ubiquitous-octo-assistant/issues) для повного списку запропонованих функцій (та відомих проблем).
+Перегляньте [Відкриті проблеми](https://github.com/Neoikiru/ubiquitous-octo-assistant/issues) для повного списку запропонованих функцій (та відомих проблем).
 
 <p align="right">(<a href="#readme-top">повернутися нагору</a>)</p>
 

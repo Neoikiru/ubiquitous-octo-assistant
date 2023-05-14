@@ -39,6 +39,7 @@
         <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
+    <li><a href="#adding-custom-commands">Cusom commands</a></li>
     <li><a href="#usage">Usage</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#license">License</a></li>
@@ -130,17 +131,46 @@ Rotate your index finger clockwise or counterclockwise to increase or decrease v
    Camera feed preview to test
    ```
 Say anything, and if it's not a built-in command, then the assistant will answer you using the GPT-3.5 model
-  Otherwise, one of the following commands will be executed (Full list can be found in ---)
+  Otherwise, one of the following commands will be executed (Full list can be found in `customCommands.yaml`)
 *  ```
    Open YouTube
    Listen to music
    Open task manager
-   
+   ...
    ```
 <!-- _For more examples, please refer to the [Documentation](https://example.com)_ -->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+
+## Adding custom commands
+
+First of all, all custom commands are exe files that were compiled by AutoHotKey.
+
+Create ahk script, compile it to exe and place in folder scripts.
+*  ```cmd
+   scripts/your_script.exe
+   ```
+
+Open `customCommands.yaml`, add your command using the structure below:
+*  ```yaml
+     - command:
+      action: ahk
+      exe: your_script.exe
+      args: # Any arguments you need to run your exe (see below)
+      phrases:
+        - your_phrase1
+        - your_phrase2
+        - your_phrase3
+        - your_phrase4
+   ```
+   
+
+* Args example. Command that will be executed in cmd
+   ```cmd
+     .../scripts/yoour_script.exe arg1 arg2 ...
+   ```
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 <!-- ROADMAP -->

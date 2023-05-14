@@ -145,7 +145,7 @@ Say anything, and if it's not a built-in command, then the assistant will answer
 
 ## Adding custom commands
 
-First of all, all custom commands are exe files that were compiled by AutoHotKey.
+First of all, all custom commands are exe files that were compiled by `AutoHotKey`.
 
 Create ahk script, compile it to exe and place in folder scripts.
 *  ```cmd
@@ -166,9 +166,19 @@ Open `customCommands.yaml`, add your command using the structure below:
    ```
    
 
-* Args example. Command that will be executed in cmd
+* Args example. Command that will be executed in cmd with this block:
+   ```yaml
+     - command:
+      action: ahk
+      exe: web.exe
+      args: 
+        - youtube.com
+      phrases:
+        - Open YouTube
+   ```
+   Now if we say `Open YouTube` the following command will be executed in cmd:
    ```cmd
-     .../scripts/yoour_script.exe arg1 arg2 ...
+     .../scripts/web.exe youtube.com
    ```
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

@@ -129,6 +129,14 @@ Rotate your index finger clockwise or counterclockwise to increase or decrease v
 *  ```
    Camera feed preview to test
    ```
+Say anything, and if it's not a built-in command, then the assistant will answer you using the GPT-3.5 model
+  Otherwise, one of the following commands will be executed (Full list can be found in ---)
+*  ```
+   Open YouTube
+   Listen to music
+   Open task manager
+   
+   ```
 <!-- _For more examples, please refer to the [Documentation](https://example.com)_ -->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

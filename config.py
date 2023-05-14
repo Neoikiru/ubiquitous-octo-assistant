@@ -1,3 +1,5 @@
+#DO NOT CHANGE ANYTHING BUT VARIABLES
+
 # Settings ---------------------------------------------------------
 ACTIVATION_WORD = 'Hey, Elli'  # [Start; Hey, Elli]
 GPT_TOKEN = ''

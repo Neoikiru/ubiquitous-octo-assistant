@@ -1,6 +1,6 @@
 from threading import Thread
 import time
-
+import re
 import cv2
 import numpy as np
 from PyQt6.QtCore import QCoreApplication, pyqtSlot, Qt
@@ -44,6 +44,9 @@ class UI(QMainWindow):
         self.ShowLoginButton.clicked.connect(self.change_login_button_icon)
         self.ShowLoginButton.setIcon(QtGui.QIcon("./GUI/Icons/hide.png"))
 
+        self.LanguageComboBox.setCurrentText(config.LANGUAGE)
+        self.change_language()
+        self.WaitTimeSpinBox.setValue(config.Time_to_listen_after_request)
 
         self.StopWordsText.textChanged.connect(self.change_stop_word)
         self.LanguageComboBox.currentTextChanged.connect(self.change_language)
@@ -70,11 +73,21 @@ class UI(QMainWindow):
         self.thread_Voice.outputText.connect(self.change_output_text)
         self.thread_Voice.start()
 
+    def change_config(self, id, input_text):
+        with open('config.py', 'r') as f: 
+            text = f.read().split('\n')
+            text[id] = input_text
+        with open('config.py', 'w') as f:
+            # print('\n'.join(text))
+            f.write('\n'.join(text))
+
     def change_edu_login(self):
         config.EDU_LOGIN = self.EduLoginLineEdit.text()
+        self.change_config(8, f"EDU_LOGIN = '{self.EduLoginLineEdit.text()}'")
 
     def change_edu_password(self):
         config.EDU_PASSWORD = self.EduPasswordLineEdit.text()
+        self.change_config(7, f"EDU_PASSWORD = '{self.EduPasswordLineEdit.text()}'")
 
     def change_login_button_icon(self):
         self.isLoginVisible = not self.isLoginVisible
@@ -184,12 +197,15 @@ class UI(QMainWindow):
 
     def change_stop_word(self):
         config.STOP_WORDS = self.StopWordsText.toPlainText().split('\n')
+        print(config.STOP_WORDS)
 
     def change_wait_time(self):
+        self.change_config(13, f"Time_to_listen_after_request = {self.WaitTimeSpinBox.value()}")
         config.Time_to_listen_after_request = self.WaitTimeSpinBox.value()
 
     def change_language(self):
         language = self.LanguageComboBox.currentText()
+        self.change_config(12, f"LANGUAGE = '{language}'")
         config.LANGUAGE = language
         match language:
             case 'Ukrainian':

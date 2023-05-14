@@ -244,9 +244,8 @@ Project Link: [https://github.com/Neoikiru/ubiquitous-octo-assistant](https://gi
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
-* []()
-* []()
-* []()
+* [@Neoikiru](https://t.me/Neoikiru)
+* [@RandomPeopleFromYouTube](https://youtube.com)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

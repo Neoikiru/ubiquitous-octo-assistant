@@ -194,7 +194,7 @@ Open `customCommands.yaml`, add your command using the structure below:
     - [x]  English
 - [x] Rename constant variables
 - [x] Add requirements.txt file (URGENT)
-- [ ] Add block about commands and genral usage instuctions (URGENT)
+- [x] Add block about commands and genral usage instuctions (URGENT)
  
 
 See the [open issues](https://github.com/Neoikiru/ubiquitous-octo-assistant/issues) for a full list of proposed features (and known issues).

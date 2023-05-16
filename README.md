@@ -7,7 +7,7 @@
     <img src="GUI/Icons/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-<h3 align="center">Virtual Assistant</h3>
+<h3 align="center">Virtual Assistant v1.0</h3>
 
   <p align="center">
     Fancy virtual assistant with cool features

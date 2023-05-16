@@ -254,7 +254,6 @@ Don't forget to give the project a star! Thanks again!
 ## Подяки
 
 * [@Neoikiru](https://t.me/Neoikiru)
-* [@ВипадковіЛюдиЮтубу](https://youtube.com)
 
 <p align="right">(<a href="#readme-top">повернутися нагору</a>)</p>
 

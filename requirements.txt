@@ -4,14 +4,14 @@ beautifulsoup4==4.12.2
 comtypes==1.1.14
 elevenlabslib==0.4.1
 fuzzywuzzy==0.18.0
-mediapipe==0.8.10.1
+mediapipe==0.10.0
 numpy==1.23.1
 openai==0.27.4
 opencv-python==4.6.0.66
 pvporcupine==2.1.0
 pvrecorder==1.1.1
 pycaw==20230407
-PyQt6==6.4.2
+PyQt6==6.5.0
 PyYAML==5.4.1
 requests==2.30.0
 sounddevice==0.4.6

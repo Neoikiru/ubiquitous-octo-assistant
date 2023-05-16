@@ -78,7 +78,7 @@ To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 * ```sh
-  python >= 3.10
+  python == 3.10.x
   ```
 
 ### Installation

@@ -83,11 +83,11 @@ class UI(QMainWindow):
 
     def change_edu_login(self):
         config.EDU_LOGIN = self.EduLoginLineEdit.text()
-        self.change_config(8, f"EDU_LOGIN = '{self.EduLoginLineEdit.text()}'")
+        self.change_config(11, f"EDU_LOGIN = '{self.EduLoginLineEdit.text()}'")
 
     def change_edu_password(self):
         config.EDU_PASSWORD = self.EduPasswordLineEdit.text()
-        self.change_config(7, f"EDU_PASSWORD = '{self.EduPasswordLineEdit.text()}'")
+        self.change_config(10, f"EDU_PASSWORD = '{self.EduPasswordLineEdit.text()}'")
 
     def change_login_button_icon(self):
         self.isLoginVisible = not self.isLoginVisible
@@ -160,9 +160,9 @@ class UI(QMainWindow):
                 self.audio_controller.change_master_volume(1)
             elif point_status == 'Counter Clockwise':
                 self.audio_controller.change_master_volume(-1)
-            print(self.audio_controller.get_master_volume())
-            print(hand_sign, point_status)
-            print('-------------------------------------------')
+            # print(self.audio_controller.get_master_volume())
+            # print(hand_sign, point_status)
+            # print('-------------------------------------------')
 
     def closeEvent(self, event):
         self.thread_Camera.stop()
@@ -197,7 +197,7 @@ class UI(QMainWindow):
 
     def change_stop_word(self):
         config.STOP_WORDS = self.StopWordsText.toPlainText().split('\n')
-        print(config.STOP_WORDS)
+        # print(config.STOP_WORDS)
 
     def change_wait_time(self):
         self.change_config(13, f"Time_to_listen_after_request = {self.WaitTimeSpinBox.value()}")

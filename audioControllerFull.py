@@ -28,6 +28,6 @@ class AudioHandler:
 
     def toggle_master_mute(self):
         self.isMuted = not self.isMuted
-        print('Muted' if self.isMuted else 'Unmuted')
-        print(f'Is muted? {self.isMuted}\n Current volume: {self.currentVolume}')
+        # print('Muted' if self.isMuted else 'Unmuted')
+        # print(f'Is muted? {self.isMuted}\n Current volume: {self.currentVolume}')
         self.set_master_volume(0 if self.isMuted else self.currentVolume)

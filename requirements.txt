@@ -20,3 +20,4 @@ tensorflow-intel==2.12.0
 torch==2.0.0
 omegaconf==2.3.0
 PyAudio==0.2.13
+python-Levenshtein==0.21.0

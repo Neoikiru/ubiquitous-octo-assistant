@@ -20,8 +20,38 @@ import sounddevice as sd
 # test
 import config
 
+def settings_handler():
+    returnValue = 0
+
+    if config.LANGUAGE not in config.SupportedLanguages:
+        for lang in config.SupportedLanguages:
+            if fuzz.WRatio(lang, config.LANGUAGE) >= 85:
+                print('Error! Language is not supported! Perhaps you wanted to enter: "{}"'.format(lang))
+                returnValue = 1
+        print('Error! Language is not supported!')
+        returnValue = 1
+    if config.ACTIVATION_WORD not in config.SupportedActivationWords:
+        for word in config.SupportedActivationWords:
+            if fuzz.WRatio(word, config.ACTIVATION_WORD) >= 85:
+                print('Error! Activation word is not supported! Perhaps you wanted to enter "{}"'.format(word))
+                returnValue = 1
+        print('Error! Activation word is not supported!')
+        returnValue = 1
+    if len(config.GPT_TOKEN) <= 5:
+        print('Error! ChatGPT api key is invalid!')
+        returnValue = 1
+    if len(config.PICOVOICE_ACCESS_KEY) <= 5:
+        print('Error! Picovoice api key is invalid!')
+        returnValue = 1
+    if len(config.ELEVENLABS_API_KEY) <= 5:
+        print('Error! Elevenlabs api key is invalid!')
+        returnValue = 1
+    return returnValue
 
 class VoiceModule(QThread):
+    if settings_handler():
+        sys.exit('Error! Bad settings!')
+
     recognizedText = pyqtSignal(str)
     currentStatus = pyqtSignal(str)
     outputText = pyqtSignal(str)
@@ -144,10 +174,11 @@ class VoiceModule(QThread):
                 if (fuzz.WRatio(phrase, input_text) > confidence):
                     confidence = fuzz.WRatio(phrase, input_text)
                     bestMatch = com
-        return bestMatch if confidence > 85 else None
+        # print(f'Confidence: {confidence}\n Command: {bestMatch}')
+        return bestMatch if confidence > 90 else None
 
     def SpeachModule(self):
-        print('Successfully started Speach Module!')
+        # print('Successfully started Speach Module!')
         recorder = self.recorder
         while True:
             recorder.start()
@@ -155,13 +186,13 @@ class VoiceModule(QThread):
             keyword_index = self.porcupine.process(pcm)
             if keyword_index == config.SupportedActivationWords.index(config.ACTIVATION_WORD):
                 recorder.stop()
-                print('Listening to your commands: ')
+                # print('Listening to your commands: ')
                 self.currentStatus.emit('Listening to your commands: ')
                 startTime = time.time()
                 while time.time() - startTime <= config.Time_to_listen_after_request:
                     text = self.speech_to_text()
                     if text:
-                        print(text)
+                        # print(text)
                         self.currentStatus.emit('Success!')
                         self.recognizedText.emit(text)
                         if any(ele in text for ele in config.STOP_WORDS):  # Stop condition
@@ -176,7 +207,6 @@ class VoiceModule(QThread):
                         # Synthesize answer
                         self.currentStatus.emit('Synthesizing answer!')
                         self.outputText.emit(response)
-                        print(config.LANGUAGE)
                         if config.LANGUAGE == 'Ukrainian':
                             self.text_to_speech_ukrainian(response)
                         elif config.LANGUAGE == 'English':
@@ -184,5 +214,5 @@ class VoiceModule(QThread):
                         startTime = time.time()
                     self.currentStatus.emit('Listening...')
                 self.currentStatus.emit('Waiting for key word...')
-                print('Waiting for key word...')
+                # print('Waiting for key word...')
             recorder.stop()

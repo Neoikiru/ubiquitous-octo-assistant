@@ -78,7 +78,7 @@ To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 * ```sh
-  python >= 3.10
+  python == 3.10.x
   ```
 
 ### Installation
@@ -138,6 +138,17 @@ Say anything, and if it's not a built-in command, then the assistant will answer
    Listen to music
    ...
    ```
+Settings in the GUI
+*  ```
+   Language: change the language of the assistant
+   ```
+
+*  ```
+   Wait Time: The number of seconds the assistant will listen to your commands after the last command answer was synthesized
+   ```
+*  ```
+   Stop words: If your phrase contains any of the `Stop words`, the program will be terminated
+   ```
 <!-- _For more examples, please refer to the [Documentation](https://example.com)_ -->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -194,7 +205,7 @@ Open `customCommands.yaml`, add your command using the structure below:
     - [x]  English
 - [x] Rename constant variables
 - [x] Add requirements.txt file (URGENT)
-- [ ] Add block about commands and genral usage instuctions (URGENT)
+- [x] Add block about commands and genral usage instuctions (URGENT)
  
 
 See the [open issues](https://github.com/Neoikiru/ubiquitous-octo-assistant/issues) for a full list of proposed features (and known issues).
@@ -245,7 +256,6 @@ Project Link: [https://github.com/Neoikiru/ubiquitous-octo-assistant](https://gi
 ## Acknowledgments
 
 * [@Neoikiru](https://t.me/Neoikiru)
-* [@RandomPeopleFromYouTube](https://youtube.com)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

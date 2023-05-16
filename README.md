@@ -138,6 +138,17 @@ Say anything, and if it's not a built-in command, then the assistant will answer
    Listen to music
    ...
    ```
+Settings in the GUI
+*  ```
+   Language - change the language of the assistant
+   ```
+
+*  ```
+   Wait Time - The number of seconds the assistant will listen to your commands after the last command answer was synthesized
+   ```
+*  ```
+   Stop words - If your phrase contains any of the `Stop words`, the program will be terminated
+   ```
 <!-- _For more examples, please refer to the [Documentation](https://example.com)_ -->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

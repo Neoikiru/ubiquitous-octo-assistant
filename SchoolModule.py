@@ -220,19 +220,4 @@ class SchoolAutomationSystem(QObject):
         except requests.exceptions.ConnectionError:
             self.StatusUI.emit('Connection refused!')
             return
-
-
-# if __name__ == "__main__":
-#     warnings.filterwarnings('ignore')
-#     edu = SchoolAutomationSystem(
-#         login='bondarenko_a_o_2006_08_31',
-#         password='rqyb2QG6weB5qWK'
-#     )
-#     startTime = time.time()
-#     edu.display_tomorrow_schedule()
-#     print(f'It took: {time.time() - startTime}secs')
-#     # edu.display_tasks()
-#     # lessons = edu.display_tomorrow_schedule(day=4, month=4)
-#     # if lessons:
-#     #     for less in lessons:
-#     #         print(less.title)
+        

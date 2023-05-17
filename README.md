@@ -136,7 +136,9 @@ Say anything, and if it's not a built-in command, then the assistant will answer
 *  ```
    Open YouTube
    Listen to music
-   ...
+   .
+   .
+   .
    ```
 Settings in the GUI
 *  ```
